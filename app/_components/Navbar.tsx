@@ -1,0 +1,86 @@
+"use client"
+
+import { useState } from "react"
+import Image from "next/image"
+import { logos } from "../_constants/Images/ImageExport"
+import { FaBars, FaTimes } from "react-icons/fa"
+
+export default function Navbar() {
+
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const links = [
+    { name: "About", id: "about" },
+    { name: "Services", id: "services" },
+    // { name: "Gallery", id: "gallery" },
+    { name: "Privacy Policy", id: "privacy" },
+    { name: "Term & Condition", id:"privacy" },
+    { name: "Contact", id: "contact" },
+  ]
+
+  return (
+    <section className="fixed w-full bg-white shadow-lg z-50">
+
+      <div className="flex h-18 items-center justify-between px-6 py-4">
+
+        {/* Logo */}
+        <Image
+          src={logos.ar_pay_logo}
+          alt="AR Pay Logo"
+          className="w-28"
+        />
+
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex gap-6 items-center">
+
+          {links.map((item, index) => (
+            <a
+              key={index}
+              href={`#${item.id}`}
+              className="text-black text-lg hover:text-[#0995FA] cursor-pointer"
+            >
+              {item.name}
+            </a>
+          ))}
+
+          <button className="bg-gradient-to-r from-[#155098] to-[#0f6261] text-white px-6 py-2 rounded-md">
+            Login
+          </button>
+
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="lg:hidden text-2xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
+
+      </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="lg:hidden flex flex-col items-center gap-4 pb-6">
+
+          {links.map((item, index) => (
+            <a
+              key={index}
+              href={`#${item.id}`}
+              onClick={() => setMenuOpen(false)}
+              className="text-black text-lg hover:text-[#0995FA]"
+            >
+              {item.name}
+            </a>
+          ))}
+
+          <button className="bg-gradient-to-r from-[#155098] to-[#0995FA] text-white px-6 py-2 rounded-md">
+            Login
+          </button>
+
+        </div>
+      )}
+
+    </section>
+  )
+}
