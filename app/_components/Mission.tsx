@@ -1,9 +1,10 @@
 export default function Service() {
   return (
-    <section id = "about" className="w-full  py-10 bg-gray-100 text-white flex items-center px-6  ">
-
+    <section
+      id="about"
+      className="w-full  py-10 bg-gray-100 text-white flex items-center px-6  "
+    >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-
         {/* Left Content */}
         <div className="space-y-6">
           <h3 className="text-5xl   rounded-xl  text-[#155098]  font-semibold mb-4">
@@ -25,15 +26,13 @@ export default function Service() {
             every corner of our country.
           </p>
 
-          <button className= " bg-gradient-to-r from-[#155098] to-[#0f6261] opacity-80 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">
+          <button className=" bg-gradient-to-r from-[#155098] to-[#0f6261] opacity-80 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">
             Learn More
           </button>
         </div>
 
         {/* Right Content */}
         <div className=" backdrop-blur-md   p-6 z-0 rounded-xl shadow-sm">
-          
-
           <p className="text-lg  leading-relaxed   text-black">
             Together, let’s embrace the future and experience a new digital
             world — all in one place with AR Pay. Our mission is to simplify
@@ -41,7 +40,6 @@ export default function Service() {
             shops.
           </p>
         </div>
-
       </div>
     </section>
   );

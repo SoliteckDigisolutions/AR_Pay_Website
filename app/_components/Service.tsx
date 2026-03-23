@@ -2,26 +2,10 @@
 
 import { motion } from "framer-motion"
 import { FaBolt, FaFire, FaMoneyBillWave } from "react-icons/fa"
-
+import {billServices} from "../constants"
 export default function Service(){
 
-const billServices = [
-  {
-    id: 1,
-    title: "Utility Bill Payments",
-    icon: FaMoneyBillWave,
-  },
-  {
-    id: 2,
-    title: "Gas Bill",
-    icon: FaFire,
-  },
-  {
-    id: 3,
-    title: "Electricity Bill",
-    icon: FaBolt,
-  },
-]
+
 
 const container = {
   hidden: { opacity: 0 },

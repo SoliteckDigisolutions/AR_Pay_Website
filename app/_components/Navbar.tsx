@@ -4,19 +4,13 @@ import { useState } from "react"
 import Image from "next/image"
 import { logos } from "../_constants/Images/ImageExport"
 import { FaBars, FaTimes } from "react-icons/fa"
+import {links} from "../constants"
 
 export default function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const links = [
-    { name: "About", id: "about" },
-    { name: "Services", id: "services" },
-    // { name: "Gallery", id: "gallery" },
-    { name: "Privacy Policy", id: "privacy" },
-    { name: "Term & Condition", id:"privacy" },
-    { name: "Contact", id: "contact" },
-  ]
+
 
   return (
     <section className="fixed w-full bg-white shadow-lg z-50">

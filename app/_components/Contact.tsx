@@ -1,5 +1,7 @@
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
+
+
 export default function ContactSection() {
   return (
     <section id = "contact" className="py-16 mt-10 bg-gray-50">
@@ -25,7 +27,7 @@ export default function ContactSection() {
 
             <h3 className="font-semibold text-lg text-[#155098]">Phone</h3>
 
-            <p className="text-gray-600">+91 98765 43210</p>
+            <a className="text-gray-600">+91 98765 43210</a>
 
           </div>
 
@@ -38,7 +40,7 @@ export default function ContactSection() {
 
             <h3 className="font-semibold text-lg text-[#155098]">Email</h3>
 
-            <p className="text-gray-600">support@easy5.com</p>
+            <a className="text-gray-600">support@arpay.com</a>
 
           </div>
 
