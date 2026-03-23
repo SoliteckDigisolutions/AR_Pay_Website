@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image"
 import { logos } from "../_constants/Images/ImageExport"
 

@@ -2,15 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
-
-const messages = [
-  "Empowering digital payments across local businesses",
-  "Building trust with every transaction",
-  "Smart, secure and seamless service — the AR Pay promise",
-  "Digital transformation made simple for everyone",
-  "Innovation meets reliability at AR Pay"
-]
-
+import {messages} from "../constants"
 export default function SlideText() {
   const [index, setIndex] = useState(0)
 

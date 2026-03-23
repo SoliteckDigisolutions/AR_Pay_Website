@@ -2,34 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
+import { testimonials } from "../constants"
 
-const testimonials = [
-  {
-    name: "Sara Saroj",
-    role: "Homemaker",
-    text: "With Easy5, I started earning from my phone by helping my neighbours with mobile and DTH recharges. It's simple, reliable, and now I feel independent and proud."
-  },
-  {
-    name: "Suresh Sharma",
-    role: "Shop Owner",
-    text: "Easy5’s support team is outstanding. They respond quickly and explain everything clearly. Managing digital payments has never been this smooth."
-  },
-  {
-    name: "Rajesh Singh",
-    role: "Retail Store Owner",
-    text: "My business has grown significantly with Easy5. I can manage multiple operators and bill payments from one dashboard, saving time and keeping customers happy."
-  },
-  {
-    name: "Ramesh Gupta",
-    role: "Village Entrepreneur",
-    text: "Through Easy5 utility bill payments, people in my village can pay their bills easily while I earn a fair commission. It's a true win-win."
-  },
-  {
-    name: "Jagat Pal",
-    role: "Mobile Shop Owner",
-    text: "Using Easy5 for daily recharges and transactions has boosted my business. Everything is transparent, fast, and secure."
-  }
-]
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0)

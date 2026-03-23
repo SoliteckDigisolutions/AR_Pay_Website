@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h2 className="text-2xl font-bold">AR Pay</h2>
             <p className="text-sm opacity-90">
-              ISO 9001:2015 Certified Company
+              ISO 0000:0015 Certified Company
             </p>
           </div>
 
@@ -38,7 +38,7 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="text-center text-sm opacity-90">
-          © 2026 Easy5 Private Limited. All rights reserved.
+          © 2026  Soliteck Digisolutions Pvt. Ltd. All rights reserved.
         </div>
 
       </div>

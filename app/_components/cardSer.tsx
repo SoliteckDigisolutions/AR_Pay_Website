@@ -2,32 +2,10 @@
 
 import { motion } from "framer-motion";
 import { FaShieldAlt, FaServer, FaCheckCircle } from "react-icons/fa";
-
+import {servicesData} from '../constants'
 export default function CardSer() {
 
-const servicesData = [
-  {
-    id: 1,
-    title: "Quality Guaranteed",
-    description:
-      "Easy5’s in-house technical team ensures uninterrupted service delivery — so you never have to worry again.",
-    icon: <FaCheckCircle size={28} />,
-  },
-  {
-    id: 2,
-    title: "Fastest Servers",
-    description:
-      "Powered by cutting-edge cloud technology, Easy5 runs on some of the fastest servers worldwide for unmatched performance.",
-    icon: <FaServer size={28} />,
-  },
-  {
-    id: 3,
-    title: "Safety Guaranteed",
-    description:
-      "Your payments are 100% safe with us. Easy5 follows strict security and accounting compliance to protect every transaction.",
-    icon: <FaShieldAlt size={28} />,
-  },
-];
+
 
 const container = {
   hidden: { opacity: 0 },

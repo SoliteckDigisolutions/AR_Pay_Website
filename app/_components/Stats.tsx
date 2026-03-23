@@ -1,33 +1,6 @@
 import { FaUsers, FaMapMarkerAlt, FaExchangeAlt, FaChartLine } from "react-icons/fa";
-
+import{ statsData} from "../constants"
 export default function Stats() {
-
-const statsData = [
-  {
-    id: 1,
-    value: "209878+",
-    label: "Happy Clients",
-    icon: <FaUsers />,
-  },
-  {
-    id: 2,
-    value: "5698+",
-    label: "Locations",
-    icon: <FaMapMarkerAlt />,
-  },
-  {
-    id: 3,
-    value: "100098+",
-    label: "Daily Transactions",
-    icon: <FaExchangeAlt />,
-  },
-  {
-    id: 4,
-    value: "12%+",
-    label: "Business Growth",
-    icon: <FaChartLine />,
-  },
-];
 
 return (
   <div className="grid py-6 px-6 md:px-12 mt-10 grid-cols-2 md:grid-cols-4 gap-6 text-center">
