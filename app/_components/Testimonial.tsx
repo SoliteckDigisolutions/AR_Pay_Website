@@ -22,7 +22,7 @@ export default function Testimonials() {
     <section className="py-16  text-center">
       <h2 className="text-4xl text-[#155098] font-bold mb-2">What Our Users Say</h2>
       <p className="text-gray-500 text-2xl mb-10">
-        Real stories from people whose businesses and lives have transformed with Easy5.
+        Real stories from people whose businesses and lives have transformed with .
       </p>
 
       <div className="flex justify-center mx-4">

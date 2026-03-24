@@ -14,27 +14,27 @@ export const testimonials = [
   {
     name: "Sara Saroj",
     role: "Homemaker",
-    text: "With Easy5, I started earning from my phone by helping my neighbours with mobile and DTH recharges. It's simple, reliable, and now I feel independent and proud.",
+    text: "With AR Pay, I started earning from my phone by helping my neighbours with mobile and DTH recharges. It's simple, reliable, and now I feel independent and proud.",
   },
   {
     name: "Suresh Sharma",
     role: "Shop Owner",
-    text: "Easy5’s support team is outstanding. They respond quickly and explain everything clearly. Managing digital payments has never been this smooth.",
+    text: "AR Pay’s support team is outstanding. They respond quickly and explain everything clearly. Managing digital payments has never been this smooth.",
   },
   {
     name: "Rajesh Singh",
     role: "Retail Store Owner",
-    text: "My business has grown significantly with Easy5. I can manage multiple operators and bill payments from one dashboard, saving time and keeping customers happy.",
+    text: "My business has grown significantly with AR Pay. I can manage multiple operators and bill payments from one dashboard, saving time and keeping customers happy.",
   },
   {
     name: "Ramesh Gupta",
     role: "Village Entrepreneur",
-    text: "Through Easy5 utility bill payments, people in my village can pay their bills easily while I earn a fair commission. It's a true win-win.",
+    text: "Through AR Pay utility bill payments, people in my village can pay their bills easily while I earn a fair commission. It's a true win-win.",
   },
   {
     name: "Jagat Pal",
     role: "Mobile Shop Owner",
-    text: "Using Easy5 for daily recharges and transactions has boosted my business. Everything is transparent, fast, and secure.",
+    text: "Using AR Pay for daily recharges and transactions has boosted my business. Everything is transparent, fast, and secure.",
   },
 ];
 
@@ -102,21 +102,21 @@ export const servicesData = [
     id: 1,
     title: "Quality Guaranteed",
     description:
-      "Easy5’s in-house technical team ensures uninterrupted service delivery — so you never have to worry again.",
+      "AR Pay in-house technical team ensures uninterrupted service delivery — so you never have to worry again.",
     icon: <FaCheckCircle size={28} />,
   },
   {
     id: 2,
     title: "Fastest Servers",
     description:
-      "Powered by cutting-edge cloud technology, Easy5 runs on some of the fastest servers worldwide for unmatched performance.",
+      "Powered by cutting-edge cloud technology, AR Pay runs on some of the fastest servers worldwide for unmatched performance.",
     icon: <FaServer size={28} />,
   },
   {
     id: 3,
     title: "Safety Guaranteed",
     description:
-      "Your payments are 100% safe with us. Easy5 follows strict security and accounting compliance to protect every transaction.",
+      "Your payments are 100% safe with us. AR Pay follows strict security and accounting compliance to protect every transaction.",
     icon: <FaShieldAlt size={28} />,
   },
 ];
