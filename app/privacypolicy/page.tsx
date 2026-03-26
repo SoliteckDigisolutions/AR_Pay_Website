@@ -28,7 +28,7 @@ export default function page() {
         
         </h1>
         <p className="text-gray-500 mb-8 text-center">
-          Transparency and trust — that’s what powers AR Pay’s commitment to your data security.
+          Transparency and trust - that’s what powers AR Pay’s commitment to your data security.
         </p>
 
         {/* Your Privacy */}
