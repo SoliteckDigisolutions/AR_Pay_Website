@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -34,7 +35,7 @@ export default function Navbar() {
         } = response.data;
         const parsedData =
           response.data && JSON.parse(apiresponse?.responseData);
-          
+
         const brandingData = parsedData[0];
         console.log("Branding data -", brandingData);
         // Fix NULL LoginImg
@@ -65,18 +66,24 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-6 items-center">
           {links.map((item, index) => (
-            <a
+            <Link
               key={index}
-              href={`#${item.id}`}
+              href={
+                item.name == "Privacy Policy"
+                  ? `/${item.id}`
+                  : item.name == "Term & Condition"
+                    ? `/${item.id}`
+                    : `/#${item.id}`
+              }
               className="text-black text-lg hover:text-[#0995FA] cursor-pointer"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
 
           <button
             onClick={() => (window.location.href = redirectURL)}
-            className="bg-gradient-to-r from-[#155098] to-[#0f6261] text-white px-6 py-2 rounded-md"
+            className="bg-gradient-to-r cursor-pointer  from-[#155098] to-[#0f6261] text-white px-6 py-2 rounded-md"
           >
             Login
           </button>

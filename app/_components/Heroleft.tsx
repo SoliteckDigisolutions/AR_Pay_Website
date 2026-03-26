@@ -5,7 +5,7 @@ export default function Heroleft(){
                 <h1> Build Your Landing Page with AR Pay</h1>
             </div>
             <div className="max-w-xl text-xl  ">
-               <h2> AR Pay brings Utility Bill Payments and more services to your trusted nearby shop — so you can easily and securely get things done in just a few clicks.</h2>
+               <h2> AR Pay brings Utility Bill Payments and more services to your trusted nearby shop, so you can easily and securely get things done in just a few clicks.</h2>
 
 
             </div>
