@@ -2,10 +2,10 @@ export default function Heroleft(){
     return(
         <section className="flex flex-col px-4  lg:align-middle lg:gap-4 gap-2  w-full justify-start">
           <div className="lg:text-6xl lg:font-semibold font-semibold  text-4xl lg:text-start h-full max-w-3xl">
-                <h1> Build Your Landing Page with AR Pay</h1>
+                <h1>Seamless Payments. Limitless Possibilities.</h1>
             </div>
             <div className="max-w-xl text-xl  ">
-               <h2> AR Pay brings Utility Bill Payments and more services to your trusted nearby shop, so you can easily and securely get things done in just a few clicks.</h2>
+               <h2>AR Pay helps you send, receive, and manage digital payments quickly, securely, and effortlessly.</h2>
 
 
             </div>
