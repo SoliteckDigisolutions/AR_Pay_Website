@@ -1,9 +1,9 @@
 import Image from "next/image"
-import { logos } from "../_constants/Images/ImageExport"
+import logo from "../_constants/Images/Logos/AR PAY LOGO.svg"
 
 export default function PrivacyTerms() {
   return (
-    <section id ="privacy" className="px-4 md:px-10 mt-10">
+    <section id ="privacy"  className="px-4  md:px-10 mt-12">
       
       <div className="bg-gradient-to-r from-[#155098] to-[#0f6261] opacity-80 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 p-6 md:p-10">
 
@@ -20,7 +20,7 @@ export default function PrivacyTerms() {
           <Image
             className="w-32 md:w-40 h-auto mb-4"
             alt="AR Pay Logo"
-            src={logos.ar_pay_logo}
+            src={logo}
           />
 
           <h1 className="text-2xl md:text-4xl font-bold text-[#155098] mb-3">

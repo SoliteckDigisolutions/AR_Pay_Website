@@ -4,8 +4,8 @@ export const links = [
   { name: "About", id: "about" },
   { name: "Services", id: "services" },
   // { name: "Gallery", id: "gallery" },
-  { name: "Privacy Policy", id: "privacy" },
-  { name: "Term & Condition", id: "privacy" },
+  { name: "Privacy Policy", id: "privacypolicy" },
+  { name: "Term & Condition", id: "terms-condition" },
   { name: "Contact", id: "contact" },
 ];
 

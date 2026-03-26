@@ -27,7 +27,7 @@ export default function ContactSection() {
 
             <h3 className="font-semibold text-lg text-[#155098]">Phone</h3>
 
-            <a className="text-gray-600">+91 98765 43210</a>
+            <a className="text-gray-600">+91 93212 34042</a>
 
           </div>
 
@@ -40,7 +40,7 @@ export default function ContactSection() {
 
             <h3 className="font-semibold text-lg text-[#155098]">Email</h3>
 
-            <a className="text-gray-600">support@arpay.com</a>
+            <a className="text-gray-600"> support@soliteck.com</a>
 
           </div>
 
