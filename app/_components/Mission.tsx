@@ -16,7 +16,7 @@ export default function Service() {
 
           <p className="text-lg text-black  leading-relaxed">
             AR Pay empowers small business owners with smart digital tools to
-            expand revenue effortlessly. We’re not just a service — we’re your
+            expand revenue effortlessly. We’re not just a service - we’re your
             partner in the digital transformation journey.
           </p>
 
@@ -35,7 +35,7 @@ export default function Service() {
         <div className=" backdrop-blur-md   p-6 z-0 rounded-xl shadow-sm">
           <p className="text-lg  leading-relaxed   text-black">
             Together, let’s embrace the future and experience a new digital
-            world — all in one place with AR Pay. Our mission is to simplify
+            world - all in one place with AR Pay. Our mission is to simplify
             digital services and make them accessible through trusted local
             shops.
           </p>

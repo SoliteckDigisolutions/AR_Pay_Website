@@ -72,7 +72,7 @@ export const statsData = [
 export const messages = [
   "Empowering digital payments across local businesses",
   "Building trust with every transaction",
-  "Smart, secure and seamless service — the AR Pay promise",
+  "Smart, secure and seamless service - the AR Pay promise",
   "Digital transformation made simple for everyone",
   "Innovation meets reliability at AR Pay"
 ]
@@ -102,7 +102,7 @@ export const servicesData = [
     id: 1,
     title: "Quality Guaranteed",
     description:
-      "AR Pay in-house technical team ensures uninterrupted service delivery — so you never have to worry again.",
+      "AR Pay in-house technical team ensures uninterrupted service delivery - so you never have to worry again.",
     icon: <FaCheckCircle size={28} />,
   },
   {

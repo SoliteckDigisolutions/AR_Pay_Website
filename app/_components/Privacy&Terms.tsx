@@ -28,7 +28,7 @@ export default function PrivacyTerms() {
           </h1>
 
           <p className="text-base md:text-lg text-gray-600 max-w-md">
-            Transparency and trust — that’s what powers AR Pay’s commitment
+            Transparency and trust - that’s what powers AR Pay’s commitment
             to protecting your data and ensuring secure digital transactions.
           </p>
 

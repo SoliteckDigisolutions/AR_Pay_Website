@@ -8,6 +8,9 @@ import Footer from "./_components/Footer";
 export const metadata: Metadata = {
   title: "AR Pay",
   description: "",
+  icons : {
+    icon : "/favicon.svg"
+  }
 };
 
 export default function RootLayout({

@@ -45,7 +45,7 @@ Our Services
 </h1>
 
 <p className="text-center text-white max-w-2xl mx-auto">
-Explore the digital services AR Pay provides to make your life easier, faster, and more secure — all from your trusted nearby shop.
+Explore the digital services AR Pay provides to make your life easier, faster, and more secure - all from your trusted nearby shop.
 </p>
 
 <div className="flex lg:flex-row flex-col lg:px-10 lg:gap-6 gap-10 mt-10 justify-center">
