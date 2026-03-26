@@ -40,7 +40,6 @@ export default function Footer() {
         <div className="text-center text-sm opacity-90">
           © 2026  Soliteck Digisolutions Pvt. Ltd. All rights reserved.
         </div>
-<div>hii</div>
       </div>
     </footer>
   );
