@@ -80,8 +80,8 @@ export default function Navbar() {
               }
              className={
   active === item.name
-    ? "text-[#0995FA] text-lg border-b-2 border-[#0995FA] cursor-pointer"
-    : "text-black text-lg hover:text-[#0995FA] hover:border-b-2 hover:border-[#0995FA] cursor-pointer"
+    ? "text-[#0995FA] transition-all duration-400 text-lg border-b-2 border-[#0995FA] cursor-pointer"
+    : "text-black text-lg  hover:text-[#0995FA] hover:border-b-2 hover:border-[#0995FA] cursor-pointer"
 }
             >
               {item.name}

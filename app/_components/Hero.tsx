@@ -6,7 +6,7 @@ import { logos } from "../_constants/Images/ImageExport";
 
 export default function Hero() {
   return (
-    <div className="relative w-full h-screen flex flex-col lg:flex-row items-center justify-between  lg:justify-evenly gap-10 text-white lg:px-6 px-4 lg:gap-6">
+    <div id="home" className="relative w-full h-screen flex flex-col lg:flex-row items-center justify-between  lg:justify-evenly gap-10 text-white lg:px-6 px-4 lg:gap-6">
       {/* Background Image */}
       <Image
         src={logos.HUMAN}
