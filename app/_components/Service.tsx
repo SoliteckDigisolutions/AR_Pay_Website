@@ -44,7 +44,7 @@ Our Services
 
 <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
 Explore the digital services AR Pay provides to make your life easier,
-faster, and more secure — all from your trusted nearby shop.
+faster, and more secure  all from your trusted nearby shop.
 </p>
 
 </div>

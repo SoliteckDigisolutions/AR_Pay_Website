@@ -1,11 +1,12 @@
-"use client";
-import Link from "next/link";
+"use client"
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { logos } from "../_constants/Images/ImageExport";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { links } from "../constants";
+import { usePathname } from "next/navigation";
 import axios, { AxiosResponse } from "axios";
 
 interface ApiRespose {
@@ -17,6 +18,7 @@ interface ApiRespose {
 }
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState<string>()
   console.log(active)
@@ -65,37 +67,43 @@ export default function Navbar() {
         {/* Logo */}
         <Image  src={logos.ar_pay_logo} alt="AR Pay Logo" className="w-28 cursor-pointer " />
 
-        {/* Desktop Menu */}
-        <div className="hidden lg:flex gap-6 items-center">
-          {links.map((item, index) => (
-            <Link
-              onClick={()=> setActive(item.name)}
-              key={index}
-              href={
-                item.name == "Privacy Policy"
-                  ? `/${item.id}`
-                  : item.name == "Term & Condition"
-                    ? `/${item.id}`
-                    : `/#${item.id}`
-              }
-             className={
-  active === item.name
-    ? "text-[#0995FA] transition-all duration-400 text-lg border-b-2 border-[#0995FA] cursor-pointer"
-    : "text-black text-lg  hover:text-[#0995FA] hover:border-b-2 hover:border-[#0995FA] cursor-pointer"
-}
-            >
-              {item.name}
-            </Link>
-          ))}
+       
 
-          <button
-            onClick={() => (window.location.href = redirectURL)}
-            className="bg-gradient-to-r cursor-pointer  from-[#155098] to-[#0f6261] text-white px-6 py-2 rounded-md"
-          >
-            Login
-          </button>
-        </div>
+{/* Desktop Menu */}
+<div className="hidden lg:flex gap-6 items-center">
+  {links.map((item, index) => {
 
+    const href =
+      item.name === "Privacy Policy" || item.name === "Term & Condition"
+        ? `/${item.id}`
+        : `/#${item.id}`;
+
+    const isActive =
+      pathname === `/${item.id}` ||
+      pathname === `/#${item.id}`;
+
+    return (
+      <Link
+        key={index}
+        href={href}
+        className={
+          isActive
+            ? "text-[#0995FA] transition-all duration-400 text-lg border-b-2 border-[#0995FA] cursor-pointer"
+            : "text-black text-lg hover:text-[#0995FA] hover:border-b-2 hover:border-[#0995FA] cursor-pointer"
+        }
+      >
+        {item.name}
+      </Link>
+    );
+  })}
+
+  <button
+    onClick={() => (window.location.href = redirectURL)}
+    className="bg-gradient-to-r cursor-pointer from-[#155098] to-[#0f6261] text-white px-6 py-2 rounded-md"
+  >
+    Login
+  </button>
+</div>
         {/* Mobile Menu Button */}
         <button
           className="lg:hidden text-2xl"

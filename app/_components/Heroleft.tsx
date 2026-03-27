@@ -16,7 +16,7 @@ export default function Heroleft(){
             </div>
 
             <div>
-               <button onClick={() => router.push("/#about")} className="px-8 py-3 mt-8 rounded-full text-white font-semibold 
+               <button onClick={() => router.push("/#services")} className="px-8 py-3 mt-8 rounded-full text-white font-semibold 
 bg-gradient-to-r from-[#155098] to-[#0f6261] 
 shadow-lg hover:shadow-xl 
 hover:scale-105 cursor-pointer  border border-b-blue-100 transition-all duration-300">
