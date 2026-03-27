@@ -107,7 +107,8 @@ export default function TermsConditions() {
           </p>
 
           <div className="text-gray-700 space-y-1">
-            <p>support@arpay.com</p>
+            <p>arpaycoustomersupport@gmail.com
+</p>
             <p>Mumbai, India</p>
           </div>
         </section>

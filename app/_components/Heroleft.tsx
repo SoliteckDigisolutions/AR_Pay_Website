@@ -19,7 +19,7 @@ export default function Heroleft(){
                <button onClick={() => router.push("/#about")} className="px-8 py-3 mt-8 rounded-full text-white font-semibold 
 bg-gradient-to-r from-[#155098] to-[#0f6261] 
 shadow-lg hover:shadow-xl 
-hover:scale-105 border border-b-blue-100 transition-all duration-300">
+hover:scale-105 cursor-pointer  border border-b-blue-100 transition-all duration-300">
   Get Started
 </button>
             </div></section>

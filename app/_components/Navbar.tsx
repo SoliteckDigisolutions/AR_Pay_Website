@@ -60,10 +60,10 @@ export default function Navbar() {
   }, []);
 
   return (
-    <section className="fixed w-full bg-white shadow-lg z-50">
-      <div className="flex h-18 items-center justify-between px-6 py-4">
+    <section className="fixed w-full mb-20 bg-white shadow-lg z-50">
+      <div className="flex h-15 items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Image src={logos.ar_pay_logo} alt="AR Pay Logo" className="w-28" />
+        <Image  src={logos.ar_pay_logo} alt="AR Pay Logo" className="w-28 cursor-pointer " />
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-6 items-center">

@@ -13,8 +13,8 @@ export default function PrivacyTerms() {
       <div className="bg-gradient-to-r from-[#155098] to-[#0f6261] opacity-80 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 p-6 md:p-10">
 
         {/* Left Button */}
-        <div className="w-full md:w-auto flex justify-center">
-          <button onClick={() => router.push("/privacypolicy")} className="w-full md:w-64 py-4 bg-white text-[#155098] font-semibold rounded-xl hover:bg-gray-100 transition">
+        <div className="w-full  md:w-auto flex justify-center">
+          <button onClick={() => router.push("/privacypolicy")} className="w-full cursor-pointer md:w-64 py-4 bg-white text-[#155098] font-semibold rounded-xl hover:bg-gray-100 transition">
             Privacy Policy
           </button>
         </div>
@@ -40,8 +40,8 @@ export default function PrivacyTerms() {
         </div>
 
         {/* Right Button */}
-        <div className="w-full md:w-auto flex justify-center">
-          <button onClick={() => router.push("/terms-condition")} className="w-full md:w-64 py-4 bg-white text-[#155098] font-semibold rounded-xl hover:bg-gray-100 transition">
+        <div className="w-full  md:w-auto flex justify-center">
+          <button onClick={() => router.push("/terms-condition")} className="w-full cursor-pointer md:w-64 py-4 bg-white text-[#155098] font-semibold rounded-xl hover:bg-gray-100 transition">
             Terms & Conditions
           </button>
         </div>
