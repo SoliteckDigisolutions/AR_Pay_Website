@@ -18,6 +18,8 @@ interface ApiRespose {
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [active, setActive] = useState<string>()
+  console.log(active)
   const [redirectURL, setRedirectURL] = useState<string>("");
   const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
   const KEY = process.env.NEXT_PUBLIC_AUTH_KEY;
@@ -67,6 +69,7 @@ export default function Navbar() {
         <div className="hidden lg:flex gap-6 items-center">
           {links.map((item, index) => (
             <Link
+              onClick={()=> setActive(item.name)}
               key={index}
               href={
                 item.name == "Privacy Policy"
@@ -75,7 +78,11 @@ export default function Navbar() {
                     ? `/${item.id}`
                     : `/#${item.id}`
               }
-              className="text-black text-lg hover:text-[#0995FA] cursor-pointer"
+             className={
+  active === item.name
+    ? "text-[#0995FA] text-lg border-b-2 border-[#0995FA] cursor-pointer"
+    : "text-black text-lg hover:text-[#0995FA] hover:border-b-2 hover:border-[#0995FA] cursor-pointer"
+}
             >
               {item.name}
             </Link>
@@ -94,7 +101,7 @@ export default function Navbar() {
           className="lg:hidden text-2xl"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {menuOpen ? <FaTimes /> : <FaBars />}
+          {menuOpen ? <FaTimes color="blue" /> : <FaBars color="black" />}
         </button>
       </div>
 
@@ -104,7 +111,13 @@ export default function Navbar() {
           {links.map((item, index) => (
             <a
               key={index}
-              href={`#${item.id}`}
+               href={
+                item.name == "Privacy Policy"
+                  ? `/${item.id}`
+                  : item.name == "Term & Condition"
+                    ? `/${item.id}`
+                    : `/#${item.id}`
+              }
               onClick={() => setMenuOpen(false)}
               className="text-black text-lg hover:text-[#0995FA]"
             >

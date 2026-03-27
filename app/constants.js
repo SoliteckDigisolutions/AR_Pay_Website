@@ -1,6 +1,7 @@
 import { FaBolt, FaChartLine, FaCheckCircle, FaExchangeAlt, FaFire, FaMapMarkerAlt, FaMoneyBillWave, FaServer, FaShieldAlt, FaUsers } from "react-icons/fa";
 
 export const links = [
+  { name: "Home", id: "home" },
   { name: "About", id: "about" },
   { name: "Services", id: "services" },
   // { name: "Gallery", id: "gallery" },

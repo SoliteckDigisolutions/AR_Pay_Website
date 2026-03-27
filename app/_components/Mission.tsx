@@ -26,9 +26,9 @@ export default function Service() {
             every corner of our country.
           </p>
 
-          <button className=" bg-gradient-to-r from-[#155098] to-[#0f6261] opacity-80 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">
+          {/* <button className=" bg-gradient-to-r from-[#155098] to-[#0f6261] opacity-80 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">
             Learn More
-          </button>
+          </button> */}
         </div>
 
         {/* Right Content */}

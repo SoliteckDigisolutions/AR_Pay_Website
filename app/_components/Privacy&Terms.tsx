@@ -1,7 +1,12 @@
+'use client'
 import Image from "next/image"
 import logo from "../_constants/Images/Logos/AR PAY LOGO.svg"
+import { useRouter } from "next/navigation"
+
 
 export default function PrivacyTerms() {
+ const router = useRouter()
+ 
   return (
     <section id ="privacy"  className="px-4  md:px-10 mt-12">
       
@@ -9,7 +14,7 @@ export default function PrivacyTerms() {
 
         {/* Left Button */}
         <div className="w-full md:w-auto flex justify-center">
-          <button className="w-full md:w-64 py-4 bg-white text-[#155098] font-semibold rounded-xl hover:bg-gray-100 transition">
+          <button onClick={() => router.push("/privacypolicy")} className="w-full md:w-64 py-4 bg-white text-[#155098] font-semibold rounded-xl hover:bg-gray-100 transition">
             Privacy Policy
           </button>
         </div>
@@ -36,7 +41,7 @@ export default function PrivacyTerms() {
 
         {/* Right Button */}
         <div className="w-full md:w-auto flex justify-center">
-          <button className="w-full md:w-64 py-4 bg-white text-[#155098] font-semibold rounded-xl hover:bg-gray-100 transition">
+          <button onClick={() => router.push("/terms-condition")} className="w-full md:w-64 py-4 bg-white text-[#155098] font-semibold rounded-xl hover:bg-gray-100 transition">
             Terms & Conditions
           </button>
         </div>
