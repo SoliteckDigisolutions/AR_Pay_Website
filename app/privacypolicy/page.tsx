@@ -120,7 +120,7 @@ export default function page() {
           <div className="mt-3 text-gray-700">
             <p>arpaycoustomersupport@gmail.com
 </p>
-            <p>Mumbai, India</p>
+           
           </div>
         </section>
 
