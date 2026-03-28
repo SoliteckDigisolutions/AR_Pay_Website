@@ -61,8 +61,8 @@ export default function Navbar() {
   };
 
   return (
-    <section className="fixed w-full bg-white shadow-lg z-50">
-      <div className="flex h-15 items-center justify-between px-6 py-4">
+    <section className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
+  <div className="flex h-15 items-center justify-between px-4 sm:px-6 py-4">
         
         {/* Logo */}
         <Image
@@ -113,7 +113,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-2xl"
+          className="lg:hidden text-xl"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <FaTimes color="blue" /> : <FaBars color="black" />}

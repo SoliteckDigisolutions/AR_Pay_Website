@@ -5,9 +5,9 @@ export default function Service() {
 
 
   
-      className="w-full h-screen  py-10 bg-gray-100 text-white flex items-center px-6  "
+      className="w-full min-h-screen   py-10 bg-gray-100 text-white flex items-center px-6  "
     >
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl  mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div className="space-y-6">
           <h3 className="text-5xl   rounded-xl  text-[#155098]  font-semibold mb-4">

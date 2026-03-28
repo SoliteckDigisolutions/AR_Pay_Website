@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import BannersBack from "@/app/_constants/Images/Logos/ARpay-homescreen-hero-vector-original-color.svg"
 import { logos } from "../_constants/Images/ImageExport"
 
 export default function HeroRight() {
@@ -18,38 +17,26 @@ export default function HeroRight() {
     }
   }
 
-  const card = {
-    hidden: { opacity: 0, y: 30, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: { duration: 0.6 }
-    }
-  }
-
   return (
     <div className="relative flex items-center justify-center w-full h-full">
 
       {/* Background Glow */}
-      <div className="absolute w-[400px] h-[400px] bg-blue-400/20 blur-[120px] rounded-full"></div>
+      <div className="absolute w-[350px] h-[350px] bg-blue-400/20 blur-[120px] rounded-full"></div>
 
       {/* Main Illustration */}
-      <motion.div
-        // variants={floating}
+      {/* <motion.div
+        variants={floating}
         animate="animate"
         className="relative z-10"
       >
-        {/* <Image
-          src={''}
+        <Image
+          src={logos.HUMAN}
           alt="AR Pay Illustration"
-          width={560}
-          height={650}
-          className="lg:drop-shadow-2xl hidden "
-        /> */}
-      </motion.div>
-
-     
+          width={500}
+          height={600}
+          className="drop-shadow-2xl"
+        />
+      </motion.div> */}
 
     </div>
   )
