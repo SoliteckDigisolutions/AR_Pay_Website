@@ -13,8 +13,8 @@ import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
-    <>
-      
+    
+      <div className="pt-10">
       <Hero />
       <Mission />
       <CardSer />
@@ -24,7 +24,8 @@ export default function Home() {
       <Testimonail />
       <PrivacyTerms />
       <ContactSection />
+      </div>
       
-    </>
+    
   );
 }

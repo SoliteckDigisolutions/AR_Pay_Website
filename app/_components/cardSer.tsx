@@ -35,7 +35,7 @@ return (
   initial="hidden"
   whileInView="visible"
   viewport={{ once: true }}
-  className="flex flex-col md:flex-row items-center justify-center gap-15.5 mt-10 p-0"
+  className="flex flex-col  md:flex-row items-center justify-center gap-15.5 mt-10 p-0"
 >
 
 {servicesData.map((i) => (

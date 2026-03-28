@@ -1,19 +1,15 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { FaBolt, FaFire, FaMoneyBillWave } from "react-icons/fa"
-import {billServices} from "../constants"
-export default function Service(){
+import { billServices } from "../constants"
 
-
+export default function Service() {
 
 const container = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.2
-    }
+    transition: { staggerChildren: 0.2 }
   }
 }
 
@@ -22,36 +18,42 @@ const card = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut"
-    }
+    transition: { duration: 0.5, ease: "easeOut" }
   }
 }
 
-return(
-<div className="">
-<motion.div
-id = "services"
+return (
+
+<div id="services" className="w-full min-h-screen flex items-center  bg-gradient-to-b from-white to-blue-50">
+
+<motion.section
+
 initial="hidden"
 whileInView="visible"
 viewport={{ once: true }}
 variants={container}
-className="min-h-fit flex flex-col gap-2 lg:mx-10 m-4 p-6 rounded-2xl mt-10 bg-gradient-to-r from-[#155098] to-[#0f6261] opacity-90"
+className="max-w-7xl mx-auto px-6 w-full"
 >
 
-<h1 className="text-white text-center text-5xl font-semibold">
+{/* Title */}
+<div className="text-center mb-14">
+
+<h1 className="text-4xl md:text-5xl font-bold text-[#155098] mb-4">
 Our Services
 </h1>
 
-<p className="text-center text-white max-w-2xl mx-auto">
-Explore the digital services AR Pay provides to make your life easier, faster, and more secure - all from your trusted nearby shop.
+<p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+Explore the digital services AR Pay provides to make your life easier,
+faster, and more secure  all from your trusted nearby shop.
 </p>
 
-<div className="flex lg:flex-row flex-col lg:px-10 lg:gap-6 gap-10 mt-10 justify-center">
+</div>
 
-{
-billServices.map((i) => {
+{/* Cards */}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+{billServices.map((i) => {
+
 const Icon = i.icon
 
 return (
@@ -59,29 +61,31 @@ return (
 <motion.div
 key={i.id}
 // variants={card}
-whileHover={{ y: -8, scale: 1.05 }}
-className="relative border border-gray-200 p-6 pt-12 w-full flex flex-col items-center justify-center bg-white text-black h-40 rounded-xl shadow-xl"
+whileHover={{ y: -10, scale: 1.04 }}
+className="relative border border-gray-200 p-8 pt-14 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 flex flex-col items-center text-center bg-white"
 >
 
-{/* Floating Icon */}
+{/* Icon */}
 <div className="absolute -top-8 bg-gradient-to-r from-[#155098] to-[#0f6261] p-4 rounded-full shadow-lg">
 <Icon className="text-3xl text-white" />
 </div>
 
 {/* Title */}
-<h1 className="text-lg text-center font-semibold text-[#0f6261]">
+<h2 className="text-lg font-semibold text-[#0f6261] mt-2">
 {i.title}
-</h1>
+</h2>
 
 </motion.div>
 
 )
-})
-}
+
+})}
 
 </div>
 
-</motion.div>
+</motion.section>
+
 </div>
+
 )
 }

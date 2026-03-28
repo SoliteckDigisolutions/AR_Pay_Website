@@ -3,7 +3,7 @@ import logos  from "../_constants/Images/Logos/AR PAY LOGO.svg";
 
 export default function page() {
   return (
-    <div className="min-h-screen  bg-gray-50 px-6 py-12">
+    <div className="min-h-screen   bg-gray-50 px-6 py-12">
       
       <div className="max-w-4xl mt-10 mx-auto bg-white shadow-lg rounded-xl p-8">
         <div className="flex flex-col justify-center align-middle items-center">
@@ -118,8 +118,9 @@ export default function page() {
           </p>
 
           <div className="mt-3 text-gray-700">
-            <p>support@arpay.com</p>
-            <p>Mumbai, India</p>
+            <p>arpaycoustomersupport@gmail.com
+</p>
+           
           </div>
         </section>
 

@@ -1,69 +1,92 @@
+"use client"
+
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-
-
 
 export default function ContactSection() {
   return (
-    <section id = "contact" className="py-16 mt-10 bg-gray-50">
-      <div className="max-w-5xl mx-auto text-center px-6">
 
-        <h2 className="text-3xl md:text-4xl font-bold text-[#155098] mb-4">
-          Get in Touch with <span className="text-blue-600">AR Pay</span>
-        </h2>
+<section
+id="contact"
+className="min-h-screen flex items-center bg-gradient-to-b from-gray-50 to-blue-50 py-20"
+>
 
-        <p className="text-gray-600 text-lg md:text-xl mb-12 max-w-2xl mx-auto">
-          We're here to help! Reach out for inquiries, partnerships, or support,
-          and our team will get back to you as soon as possible.
-        </p>
+<div className="max-w-6xl mx-auto px-6 w-full">
 
-        <div className="grid md:grid-cols-3 gap-8">
+{/* Heading */}
+<div className="text-center mb-16">
 
-          {/* Phone */}
-          <div className="p-8 bg-white shadow-lg rounded-2xl hover:shadow-xl transition flex flex-col items-center gap-3">
-            
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#0995FA]/10 text-[#0995FA] text-xl">
-              <FaPhoneAlt />
-            </div>
+<h2 className="text-4xl md:text-5xl font-bold text-[#155098] mb-4">
+Get in Touch with <span className="text-blue-600">AR Pay</span>
+</h2>
 
-            <h3 className="font-semibold text-lg text-[#155098]">Phone</h3>
+<p className="text-gray-600 text-lg max-w-2xl mx-auto">
+We're here to help! Reach out for inquiries, partnerships, or support,
+and our team will get back to you as soon as possible.
+</p>
 
-            <a className="text-gray-600">+91 93212 34042</a>
+</div>
 
-          </div>
+{/* Cards */}
+<div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-          {/* Email */}
-          <div className="p-8 bg-white shadow-lg rounded-2xl hover:shadow-xl transition flex flex-col items-center gap-3">
+{/* Phone */}
+<div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 flex flex-col items-center text-center">
 
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#0995FA]/10 text-[#0995FA] text-xl">
-              <FaEnvelope />
-            </div>
+<div className="w-14 h-14 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 text-2xl mb-4">
+<FaPhoneAlt />
+</div>
 
-            <h3 className="font-semibold text-lg text-[#155098]">Email</h3>
+<h3 className="text-xl font-semibold text-[#155098] mb-2">
+Phone
+</h3>
 
-            <a className="text-gray-600"> support@soliteck.com</a>
+<a className="text-gray-600 hover:text-blue-600 transition">
++91 8693891074
+</a>
 
-          </div>
+</div>
 
-          {/* Office */}
-          <div className="p-8 bg-white shadow-lg rounded-2xl hover:shadow-xl transition flex flex-col items-center gap-3">
+{/* Email */}
+<div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 flex flex-col items-center text-center">
 
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#0995FA]/10 text-[#0995FA] text-xl">
-              <FaMapMarkerAlt />
-            </div>
+<div className="w-14 h-14 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 text-2xl mb-4">
+<FaEnvelope />
+</div>
 
-            <h3 className="font-semibold text-lg text-[#155098]">Office</h3>
+<h3 className="text-xl font-semibold text-[#155098] mb-2">
+Email
+</h3>
 
-            <p className="text-gray-600 text-center">
-              9th Floor, Office 901 <br />
-              Technocity, Mahape <br />
-              Navi Mumbai – 400701
-            </p>
+<a className="text-gray-600 hover:text-blue-600 transition">
+arpaycoustomersupport@gmail.com
+</a>
 
-          </div>
+</div>
 
-        </div>
+{/* Office */}
+<div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 flex flex-col items-center text-center">
 
-      </div>
-    </section>
+<div className="w-14 h-14 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 text-2xl mb-4">
+<FaMapMarkerAlt />
+</div>
+
+<h3 className="text-xl font-semibold text-[#155098] mb-2">
+Office
+</h3>
+
+<p className="text-gray-600">
+Shop no. 1 <br />
+Mourya Malhar Apartment <br />
+Near TMC School, Shilgaon 421204
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
   );
 }

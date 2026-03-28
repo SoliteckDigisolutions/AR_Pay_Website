@@ -2,7 +2,10 @@ export default function Service() {
   return (
     <section
       id="about"
-      className="w-full  py-10 bg-gray-100 text-white flex items-center px-6  "
+
+
+  
+      className="w-full h-screen  py-10 bg-gray-100 text-white flex items-center px-6  "
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
@@ -26,9 +29,9 @@ export default function Service() {
             every corner of our country.
           </p>
 
-          <button className=" bg-gradient-to-r from-[#155098] to-[#0f6261] opacity-80 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">
+          {/* <button className=" bg-gradient-to-r from-[#155098] to-[#0f6261] opacity-80 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">
             Learn More
-          </button>
+          </button> */}
         </div>
 
         {/* Right Content */}
