@@ -1,13 +1,12 @@
 import { FaBolt, FaChartLine, FaCheckCircle, FaExchangeAlt, FaFire, FaMapMarkerAlt, FaMoneyBillWave, FaServer, FaShieldAlt, FaUsers } from "react-icons/fa";
 
 export const links = [
-  { name: "Home", id: "home" },
-  { name: "About", id: "about" },
-  { name: "Services", id: "services" },
-  // { name: "Gallery", id: "gallery" },
-  { name: "Privacy Policy", id: "privacypolicy" },
-  { name: "Term & Condition", id: "terms-condition" },
-  { name: "Contact", id: "contact" },
+
+  { id: "about", name: "About", type: "section" },
+  { id: "services", name: "Services", type: "section" },
+  { id: "privacypolicy", name: "Privacy Policy", type: "page" },
+  { id: "terms-condition", name: "Term & Condition", type: "page" },
+  { id: "contact", name: "Contact", type: "section" }
 ];
 
 
